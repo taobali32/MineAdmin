@@ -256,20 +256,24 @@ watch(
 <style scoped lang="scss">
 :deep(.el-upload-list) {
   @apply flex gap-1.5 flex-wrap;
+
   .el-upload-list__item {
     @apply w-auto outline-none b-0;
   }
+
   .el-upload-list__item:hover {
     background: none;
   }
+
   & :last-child {
     @apply flex gap-x-1.5;
   }
 }
+
 .ma-upload-container {
   @apply flex items-center justify-center bg-gray-50 b-1 b-dashed rounded-md b-gray-3 dark-b-dark-50
     transition-all duration-300 text-gray-5 dark-bg-dark-5 relative;
-  ;
+  
 
   .ma-resource-btn {
     @apply absolute top-0 b-1 b-dashed b-gray-3 dark-b-dark-50 transition-all duration-300 rounded-t-md
@@ -280,18 +284,22 @@ watch(
 
   .ma-preview-mask {
     @apply absolute z-8 w-full h-full rounded-md transition-all duration-300 flex items-center justify-center gap-x-3;
+
     .icon {
       @apply hidden text-white cursor-pointer;
     }
   }
+
   .ma-preview-mask:hover {
     @apply bg-dark-5/50%;
+
     .icon {
       @apply inline;
     }
   }
 
-  &:hover, .ma-resource-btn:hover {
+  &:hover,
+ .ma-resource-btn:hover {
     @apply text-[rgb(var(--ui-primary))] b-[rgb(var(--ui-primary))];
   }
 }

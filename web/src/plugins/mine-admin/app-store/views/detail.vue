@@ -344,12 +344,16 @@ defineExpose({ open })
 :deep(.el-descriptions__cell) {
   @apply flex;
 }
+
 :deep(.md-editor-code-head) {
-  width: 100%; display: flex;
+  display: flex;
+  width: 100%;
 }
+
 :deep(.md-editor-code-lang) {
   @apply hidden;
 }
+
 :deep(.md-editor-code-action) {
   @apply w-full flex gap-x-3;
 }

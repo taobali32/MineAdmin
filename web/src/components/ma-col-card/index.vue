@@ -62,7 +62,7 @@ onMounted(async () => {
   .mine-com-card {
     @apply border border-stone-2 border-solid rounded p-3 hover-shadow-md
       dark-border-dark-1 dark-shadow-dark-9
-    transition-all duration-280 ease-in-out
+      transition-all duration-280 ease-in-out
     ;
   }
 }

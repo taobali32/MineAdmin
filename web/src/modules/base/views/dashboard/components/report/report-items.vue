@@ -119,7 +119,7 @@ useEcharts(echartReportItem).setOption(chartOption.value)
 <style scoped lang="scss">
 .content-wrap {
   @apply
-  flex gap-x-3 items-center
+    flex gap-x-3 items-center
   ;
 
   .chart {

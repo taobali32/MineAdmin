@@ -3,7 +3,7 @@
     relative h-full flex
     w-[var(--mine-g-main-aside-width)]
     bg-[#f3f4f8] dark-bg-dark-9
-  border-r-0 border-r-solid
+    border-r-0 border-r-solid
   border-r-[#e8e9ec]
   dark-border-r-dark-6
   relative z-30;
@@ -40,7 +40,7 @@
   }
 
   &.shadow-right {
-    box-shadow: inset 0 0 0 transparent, inset -10px 0px 10px -10px var(--mine-g-box-shadow-color);
+    box-shadow: inset 0 0 0 transparent, inset -10px 0 10px -10px var(--mine-g-box-shadow-color);
   }
 
   &.shadow-top.shadow-bottom {
@@ -48,7 +48,7 @@
   }
 
   &.shadow-left.shadow-right {
-    box-shadow: inset 10px 0 10px -10px var(--mine-g-box-shadow-color), inset -10px 0px 10px -10px var(--mine-g-box-shadow-color);
+    box-shadow: inset 10px 0 10px -10px var(--mine-g-box-shadow-color), inset -10px 0 10px -10px var(--mine-g-box-shadow-color);
   }
 
   & a {

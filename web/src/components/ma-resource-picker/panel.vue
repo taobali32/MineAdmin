@@ -596,23 +596,26 @@ onUnmounted(() => {
   from {
     opacity: 0;
   }
+
   to {
     opacity: 1;
   }
 }
 
-.ma-resource-panel{
+.ma-resource-panel {
   @apply relative;
-  --resource-item-size:120px;
+
+  --resource-item-size: 120px;
 
   .ma-resource-dock {
     @apply absolute bg-gray-2 dark-bg-dark-9
-    rounded-xl p-1 flex items-center justify-center gap-x-0.5
+      rounded-xl p-1 flex items-center justify-center gap-x-0.5
     ;
-    height: 40px;
-    left: 50%;
-    transform: translate(-50%, 0%);
+
     bottom: 0;
+    left: 50%;
+    height: 40px;
+    transform: translate(-50%, 0%);
 
     .res-app-container {
       @apply relative h-40px flex items-center;
@@ -621,12 +624,13 @@ onUnmounted(() => {
     // 白色圆点
     .activate::after {
       content: "";
+
       @apply block b-2 b-solid b-white rounded-full w-0 h-0 absolute bottom-2px left-50%;
     }
 
     .res-app {
       @apply w-40px h-40px shadow-inset shadow-md rounded-10px transition-all duration-300 flex items-center justify-center
-      bg-gray-3 dark-bg-dark-4
+        bg-gray-3 dark-bg-dark-4
         dark-shadow-dark-9
       ;
     }
@@ -670,34 +674,42 @@ onUnmounted(() => {
     }
   }
 }
-.resource-item{
+
+.resource-item {
   animation: fadeIn 0.38s ease-out forwards;
+
   --un-bg-opacity: 0.3;
+
   @apply relative min-w-[var(--resource-item-size)] pb-[100%] rounded overflow-hidden border-box bg-gray-1  dark-bg-dark-3;
 }
-.resource-item__cover{
+
+.resource-item__cover {
   @apply absolute bottom-0 left-0 h-full w-full;
 }
-.resource-item__name{
-  @apply absolute bottom-0 left-0 h-24px w-[calc(100%-20px)] overflow-hidden bg-gray:60 px-10px text-12px leading-24px whitespace-nowrap text-ellipsis c-white;
 
+.resource-item__name {
+  @apply absolute bottom-0 left-0 h-24px w-[calc(100%-20px)] overflow-hidden bg-gray:60 px-10px text-12px leading-24px whitespace-nowrap text-ellipsis c-white;
 }
-.resource-item__selected{
+
+.resource-item__selected {
   @apply absolute top--30px right--30px w-40px h-40px;
   //transition: all 0.1s ease-in-out;
   background-image: linear-gradient(to top right, transparent 50%, rgb(var(--ui-primary)) 50%);
 }
-.resource-item__selected-icon{
+
+.resource-item__selected-icon {
   @apply absolute top-0 right-0 p-2px c-white;
 }
-.resource-item.active .resource-item__selected{
+
+.resource-item.active .resource-item__selected {
   @apply top-0 right-0;
 }
 
-.resource-placeholder{
+.resource-placeholder {
   @apply min-w-[var(--resource-item-size)] h-0 pointer-events-none p-0;
 }
-.resource-skeleton{
+
+.resource-skeleton {
   @apply min-w-[var(--resource-item-size)] pb-[100%];
 }
 

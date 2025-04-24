@@ -121,8 +121,8 @@ setOption(chartOption.value)
 <style lang="scss" scoped>
 .content-wrap {
   @apply
-  flex rounded mt-5 p-3 bg-[rgb(var(--ui-primary)/5%)] dark-bg-[rgb(var(--ui-primary)/10%)]
-  gap-x-3 items-center
+    flex rounded mt-5 p-3 bg-[rgb(var(--ui-primary)/5%)] dark-bg-[rgb(var(--ui-primary)/10%)]
+    gap-x-3 items-center
   ;
 
   .chart {

@@ -172,13 +172,12 @@ useTable('table').then((table: MaTableExpose) => {
 <style lang="scss" scoped>
 .run-list {
   @apply b-1 b-solid b-gray-1 dark-b-dark-3 p-3 b-l-0 b-t-0 b-r-0 lg:b-r-1
-  transition-all duration-300
+    transition-all duration-300
   hover-shadow dark-hover-shadow-dark-3
   ;
 
   .desc {
-    @apply mt-3 text-sm leading-6 dark-text-[#888] text-gray-5
-  }
+    @apply mt-3 text-sm leading-6 dark-text-[#888] text-gray-5; }
 }
 
 .ma-link li {

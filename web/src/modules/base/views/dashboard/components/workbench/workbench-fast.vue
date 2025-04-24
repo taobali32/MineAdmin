@@ -43,9 +43,10 @@ const router = useRouter()
 
 <style scoped lang="scss">
 .link {
-  transition: all .15s;
+  transition: all 0.15s;
+
   @apply min-w-20 flex flex-col items-center gap-y-2 rounded p-4
-  hover-bg-[rgb(var(--ui-primary)/10%)]
+    hover-bg-[rgb(var(--ui-primary)/10%)]
   ;
 }
 </style>

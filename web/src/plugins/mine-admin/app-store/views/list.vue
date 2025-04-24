@@ -144,12 +144,13 @@ onMounted(() => {
 <style scoped lang="scss">
 .appstore-item {
   @apply b-gray-2 hover:b-[rgb(var(--ui-primary))]
-  group b-1 b-solid
+    group b-1 b-solid
   relative top-0 mt-8 h-auto overflow-hidden border rounded-md transition-all duration-300
-  sm:mt-0 dark:border-dark-400 dark:shadow-dark-300 hover:shadow-md hover:-top-1 dark:hover:b-[rgb(var(--ui-primary)/.95)];
+  sm:mt-0 dark:border-dark-400 dark:shadow-dark-300 hover:shadow-md hover:-top-1 dark:hover:b-[rgb(var(--ui-primary)/0.95)];
 }
+
 .appstore-item-image {
   @apply pointer-events-none h-48 w-full transform dark-brightness-[0.9] absolute t-0 l-0 shadow-md
-  transition-transform duration-200 group-hover:scale-105 sm:rounded-md !rounded-b-none !rounded-t-md;
+    transition-transform duration-200 group-hover:scale-105 sm:rounded-md !rounded-b-none !rounded-t-md;
 }
 </style>

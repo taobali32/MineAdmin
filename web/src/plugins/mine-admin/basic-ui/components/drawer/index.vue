@@ -117,13 +117,13 @@ const isOpen = defineModel<boolean>()
 .drawer-mask {
   @apply fixed inset-0 bg-gray-9/30 backdrop-blur-sm transition-opacity dark-bg-black/15 z-2999 h-full;
 }
+
 .drawer-trigger-button {
-  @apply b-0 bg-blue/0 relative top-2px outline-none ring-none
-}
+  @apply b-0 bg-blue/0 relative top-2px outline-none ring-none; }
 
 .drawer-content {
   @apply absolute transition-all ease-in-out top-0 right-0
-  z-3000 h-full bg-white dark-bg-dark-5 rounded-l-xl
+    z-3000 h-full bg-white dark-bg-dark-5 rounded-l-xl
   ;
 }
 

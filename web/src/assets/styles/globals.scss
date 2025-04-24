@@ -2,34 +2,44 @@
 :root {
   /* 头部高度 */
   --mine-g-header-height: 55px;
+
   /* 脚部高度 */
   --mine-g-footer-height: 50px;
+
   /* 侧边栏主菜单宽度 */
   --mine-g-main-aside-width: 80px;
+
   /* 侧边栏子菜单展开宽度 */
   --mine-g-sub-aside-width: 200px;
+
   /* 侧边栏子菜单折叠后宽度 */
   --mine-g-sub-aside-collapse-width: 65px;
+
   /* 菜单缩进宽度 */
   --mine-g-menu-retract-width: 15px;
+
   /* 工具栏高度 */
   --mine-g-toolbar-height: 55px;
+
   /* 标签栏高度 */
   --mine-g-tabbar-height: 40px;
+
   /* 盒子阴影 */
   --mine-g-box-shadow-color: rgb(0 0 0 / 18%);
+
   /* 主颜色 */
   --el-color-primary: --ui-primery;
 }
 
 @font-face {
-  font-family: 'alibaba-pu-hui-ti-3-regular';
-  src:url('/font/alibaba-pu-hui-ti-3/AlibabaPuHuiTi-3-55-Regular.woff2') format('woff2');
-  font-weight: normal;
+  font-family: "alibaba-pu-hui-ti-3-regular";
   font-style: normal;
+  font-weight: normal;
+  src: url("/font/alibaba-pu-hui-ti-3/AlibabaPuHuiTi-3-55-Regular.woff2") format("woff2");
 }
+
 body {
-  font-family: 'alibaba-pu-hui-ti-3-regular', Arial, Helvetica, sans-serif;
+  font-family: "alibaba-pu-hui-ti-3-regular", Arial, Helvetica, sans-serif;
 }
 
 ul li { list-style: none; }
@@ -78,7 +88,7 @@ body {
 /* 右键菜单 */
 .mine-contextmenu {
   @apply z-1000 !rounded-md !ring-1 !ring-gray-2 !dark-ring-dark-3
-  dark-bg-dark-8
+    dark-bg-dark-8
   ;
 
   .mx-context-menu-item {
@@ -143,7 +153,7 @@ textarea {
 .v-popper--theme-tooltip .v-popper__inner {
   @apply text-sm b-1 b-solid
     b-dark-3 !bg-dark-3 !text-white
-  dark-b-stone-2 !dark-bg-stone-2 !dark-text-black
+    dark-b-stone-2 !dark-bg-stone-2 !dark-text-black
   ;
 }
 
@@ -181,17 +191,16 @@ textarea {
   transition: all 0.2s ease;
   will-change: transform;
 }
+
 /* ma-slide-right */
 .ma-slide-right-enter-from,
-.ma-slide-left-enter-from
-{
+.ma-slide-left-enter-from {
   opacity: 0;
   transform: translateX(-10px);
 }
 
 .ma-slide-right-leave-to,
-.ma-slide-left-leave-to
-{
+.ma-slide-left-leave-to {
   opacity: 0;
   transform: translateX(10px);
 }
@@ -203,17 +212,16 @@ textarea {
   transition: all 0.2s ease;
   will-change: transform;
 }
+
 /* ma-slide-down */
 .ma-slide-down-enter-from,
-.ma-slide-up-leave-to
-{
+.ma-slide-up-leave-to {
   opacity: 0;
   transform: translateY(-10px);
 }
 
 .ma-slide-down-leave-to,
-.ma-slide-up-enter-from
- {
+.ma-slide-up-enter-from {
   opacity: 0;
   transform: translateY(10px);
 }

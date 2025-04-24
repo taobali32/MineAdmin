@@ -53,7 +53,7 @@
   @apply fixed bottom-6 right-10 z-1000
     h-10 w-10 flex cursor-pointer
     items-center justify-center rounded-full
-  bg-white shadow-sm ring-1 ring-gray-2 hover-bg-gray-1
+    bg-white shadow-sm ring-1 ring-gray-2 hover-bg-gray-1
   dark-ring-dark-1 dark-hover-bg-dark-9/50 dark-bg-dark-6
   ;
 }
@@ -86,14 +86,17 @@ body.mine-aside-dark {
     background: rgb(15 15 15 / var(--un-bg-opacity));
     border-right-color: rgb(28 28 30 / var(--un-border-right-opacity));
   }
+
   .mine-main-aside-list {
     a {
-      color: rgb(229 231 235 / var(--un-text-opacity)); /* #e5e7eb */;
-    }
-    a:hover {
-      background-color: rgb(var(--ui-primary) / 30%); /* rgb(var(--ui-primary)/30%) */
       color: rgb(229 231 235 / var(--un-text-opacity)); /* #e5e7eb */
     }
+
+    a:hover {
+      color: rgb(229 231 235 / var(--un-text-opacity)); /* #e5e7eb */
+      background-color: rgb(var(--ui-primary) / 30%); /* rgb(var(--ui-primary)/30%) */
+    }
+
     a.active {
       background-color: rgb(var(--ui-primary) / 70%); /* rgb(var(--ui-primary)/70%) */
     }
@@ -106,15 +109,16 @@ body.mine-aside-dark {
 
   .mine-sub-aside-container,
   .mine-sub-aside {
-    border-right-color: rgb(31 31 31 / 1);
     background-color: rgb(24 24 24 / var(--un-bg-opacity)); /* #181818 */
+    border-right-color: rgb(31 31 31 / 100%);
 
     & .mine-sub-aside-close-button,
     & .mine-sub-aside-collapse-button,
     & .mine-sub-aside-fixed-button {
       color: rgb(243 244 246 / var(--un-text-opacity));
-      background-color: #2D2D2D;
+      background-color: #2d2d2d;
     }
+
     & .mine-sub-aside-close-button:hover,
     & .mine-sub-aside-collapse-button:hover,
     & .mine-sub-aside-fixed-button:hover {
@@ -125,21 +129,25 @@ body.mine-aside-dark {
 
   .mine-toolbar-btn {
     color: #fff;
-    background-color: rgb(31 31 31 / var(--un-bg-opacity)); /* #1f1f1f */;
+    background-color: rgb(31 31 31 / var(--un-bg-opacity)); /* #1f1f1f */
     border-color: rgb(45 45 45 / var(--un-border-opacity));
   }
 
-  .mine-menu-link, .mine-menu-link:hover, .mine-menu-link.active {
-    color: #E5E7EB;
+  .mine-menu-link,
+ .mine-menu-link:hover,
+ .mine-menu-link.active {
+    color: #e5e7eb;
   }
+
   .mine-menu-item.active {
     .parentActive {
       @apply text-white;
     }
   }
+
   .mine-menu-link:hover {
-    background-color: rgb(var(--ui-primary)/30%);
     color: #fff !important;
+    background-color: rgb(var(--ui-primary)/30%);
   }
 
   .mine-menu-link.active {

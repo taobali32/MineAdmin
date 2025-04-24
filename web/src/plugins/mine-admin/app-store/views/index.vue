@@ -151,6 +151,7 @@ provide('requestAppList', requestAppList)
 .mine-appstore-filter {
   @apply sticky top-[56px] z-999 bg-white p-3 dark-bg-dark-8 shadow-md dark-shadow-dark-4 transition-all duration-300;
 }
+
 .mine-appstore-list {
   @apply sm:grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 min-h-60 gap-4 mt-3 relative;
 }
