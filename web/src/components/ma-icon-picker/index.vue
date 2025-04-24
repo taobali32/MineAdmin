@@ -64,7 +64,7 @@ const dialogVisible = ref<boolean>(false)
       </el-input>
     </div>
 
-    <el-dialog v-model="dialogVisible" :title="useLocalTrans('selectedIcon')" width="800" append-to-body draggable destroy-on-close align-center>
+    <el-dialog v-model="dialogVisible" :title="useLocalTrans('selectedIcon')" width="800" draggable append-to-body destroy-on-close align-center>
       <MaIconPanel
         ref="iconPanelRef"
         @select="(icon: string) => {

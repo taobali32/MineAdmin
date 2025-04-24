@@ -242,7 +242,7 @@ const useSettingStore = defineStore(
       isBannerLayout,
       getFixedAsideState,
       setFixedAsideState,
-        setToolBar,
+      setToolBar,
       getMenuCollapseState,
       setMenuCollapseState,
       toggleCollapseButton,

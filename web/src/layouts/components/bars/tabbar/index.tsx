@@ -204,35 +204,35 @@ export default defineComponent({
                   {item?.i18n ? useTrans(item.i18n) : item.title}
                 </span>
                 {item.affix && pressKeys.oneKey !== 'alt'
-                && (
-                  <ma-svg-icon
-                    name="ic:baseline-push-pin"
-                    class="icon"
-                    onClick={(e: Event) => {
-                      e.stopPropagation()
-                      if (item.name === tabStore.defaultTab.name) {
-                        Message.error(t('mineAdmin.tab.cannotUnfixed'))
-                        return
-                      }
-                      tabStore.cancelAffixTab(item)
-                    }}
-                  />
-                )}
+                  && (
+                    <ma-svg-icon
+                      name="ic:baseline-push-pin"
+                      class="icon"
+                      onClick={(e: Event) => {
+                        e.stopPropagation()
+                        if (item.name === tabStore.defaultTab.name) {
+                          Message.error(t('mineAdmin.tab.cannotUnfixed'))
+                          return
+                        }
+                        tabStore.cancelAffixTab(item)
+                      }}
+                    />
+                  )}
                 {!item.affix && pressKeys.oneKey !== 'alt'
-                && (
-                  <ma-svg-icon
-                    name="material-symbols:close-rounded"
-                    class="icon"
-                    onClick={(e: Event) => {
-                      e.stopPropagation()
-                      tabStore.closeTab(item)
-                    }}
-                  />
-                )}
+                  && (
+                    <ma-svg-icon
+                      name="material-symbols:close-rounded"
+                      class="icon"
+                      onClick={(e: Event) => {
+                        e.stopPropagation()
+                        tabStore.closeTab(item)
+                      }}
+                    />
+                  )}
                 {pressKeys.oneKey === 'alt'
-                && (
-                  <span class="number-icon">{ idx + 1 }</span>
-                )}
+                  && (
+                    <span class="number-icon">{ idx + 1 }</span>
+                  )}
               </a>
             )
           })}

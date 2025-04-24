@@ -8,7 +8,7 @@
  - @Link   https://github.com/mineadmin
 -->
 <script setup lang="ts">
-import { VAceEditor } from "vue3-ace-editor";
+import { VAceEditor } from 'vue3-ace-editor'
 import 'ace-builds/src-noconflict/mode-json'
 import 'ace-builds/src-noconflict/theme-dawn'
 import 'ace-builds/src-noconflict/theme-github_dark'
@@ -20,17 +20,18 @@ defineOptions({ name: 'system:group:form' })
 const color = useColorMode()
 const t = useTrans().globalTrans
 const convertArray = ref()
-const content = ref();
+const content = ref()
 
 // Watch for changes in content and format it
 watch(content, (newValue) => {
   try {
-    const parsedJson = JSON.parse(newValue);
-    content.value = formatJson(parsedJson); // Format the JSON
-  } catch (error) {
+    const parsedJson = JSON.parse(newValue)
+    content.value = formatJson(parsedJson) // Format the JSON
+  }
+  catch (error) {
     // Handle invalid JSON format if necessary
   }
-});
+})
 
 const theme = computed(() => color.value === 'dark' ? 'github_dark' : 'dawn')
 
@@ -50,14 +51,16 @@ function add(): Promise<any> {
           data: parsedArray,
         })
         convertArray.value = parsedArray
-      } else {
+      }
+      else {
         reject({
           code: 404,
           success: false,
           message: 'Parsed content is not an array',
         })
       }
-    } catch (error) {
+    }
+    catch (error) {
       reject({
         code: 404,
         success: false,
@@ -71,7 +74,6 @@ defineExpose({
   add,
   maForm: convertArray,
 })
-
 </script>
 
 <template>

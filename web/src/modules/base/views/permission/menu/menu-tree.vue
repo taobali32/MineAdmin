@@ -62,11 +62,11 @@ onMounted(async () => {
     v-bind="$attrs"
     ref="maTreeRef"
     tree-key="meta.title"
-    highlight-current
+
     :expand-on-click-node="false"
     node-key="id"
     :indent="26"
-    auto-expand-parent
+    auto-expand-parent highlight-current
     class="mt-1 h-[200px] lg:h-[calc(100%-80px)]"
     @node-click="(node: MenuVo) => {
       emit('menu-select', node)

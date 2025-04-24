@@ -125,8 +125,8 @@ const loginChartOptions = ref({
       return `<div class="echarts-tooltip-diy">
         <p class="tooltip-title">${params[0].axisValueLabel}</p>
         <div class="content-panel"><span>登录次数：</span><span class="tooltip-value">${Number(
-    params[0].value,
-  ).toLocaleString()}</span></div>
+          params[0].value,
+        ).toLocaleString()}</span></div>
       </div>`
     },
     className: 'echarts-tooltip-diy',

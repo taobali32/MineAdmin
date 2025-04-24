@@ -194,7 +194,7 @@ watch(
       <component :is="btnRender()" v-show="fileList.length === 0" ref="uploadBtnRef" />
     </slot>
     <template #file="{ file, index }">
-      <div class="ma-preview-list ma-upload-container relative" :style="getSize">
+      <div class="ma-upload-container ma-preview-list relative" :style="getSize">
         <div class="ma-preview-mask">
           <ma-svg-icon
             name="weui:eyes-on-filled"
@@ -273,7 +273,6 @@ watch(
 .ma-upload-container {
   @apply flex items-center justify-center bg-gray-50 b-1 b-dashed rounded-md b-gray-3 dark-b-dark-50
     transition-all duration-300 text-gray-5 dark-bg-dark-5 relative;
-  
 
   .ma-resource-btn {
     @apply absolute top-0 b-1 b-dashed b-gray-3 dark-b-dark-50 transition-all duration-300 rounded-t-md
